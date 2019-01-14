@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                echo "hello, today is $(date)"
+                sh 'echo "hello, today is $(date)"'
             }
         }
         stage('Deploy') {
