@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'ls'
                 sh 'echo "Hello There"'
             }
         }
@@ -17,6 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'pwd'
                 sh 'echo "Job Well Done"'
             }
         }
